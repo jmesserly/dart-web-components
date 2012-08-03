@@ -10,12 +10,12 @@
  * register custom elements, provide the appropriate lookup function to your
  * CustomElementsManager.
  *
- * This script only works at present in dart2js, but it should work in dartium
- * soon (pending MutationObservers). The script does an XMLHTTP request, so
- * to test using locally defined custom elements you must run chrome with the
- * flag -allow-file-access-from-files.
+ * This script does an XMLHTTP request, so to test using custom elements with
+ * file:// URLs you must run Chrome with `--allow-file-access-from-files`.
+ *
+ * Other helpful Chrome flags are:
+ * `--enable-shadow-dom --enable-scoped-style --enable-devtools-experiments`
  */
-
 #library('webcomponents');
 
 #import('dart:html');
